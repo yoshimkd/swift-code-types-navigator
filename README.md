@@ -10,6 +10,9 @@ Just run these two commands in Terminal from this project's root directory:
 `swift build`  
 `.build/debug/SwiftDiagramGenerator . <swiftFileOrFolderPath1> <swiftFileOrFolderPath2> ...`
 
+### A tutorial post:
+https://martinmitrevski.com/2018/03/16/swift-code-types-navigator
+
 ### If you wish to work with the source code and hopefully contribute, here are some useful Swift Package Manager commands:
 `swift package clean`  
 `swift build` creates a SwiftDiagramGenerator executable in .build/debug  
