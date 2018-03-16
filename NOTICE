@@ -1,0 +1,11 @@
+swift-code-types-navigator uses and redistributes the following third-party libraries:
+
+- Vis.js
+  http://visjs.org
+  The MIT License
+  http://opensource.org/licenses/MIT
+
+- Swift Abstract Syntax Tree
+  https://github.com/yanagiba/swift-ast
+  Apache License 2.0
+  https://github.com/yanagiba/swift-ast/blob/master/LICENSE
