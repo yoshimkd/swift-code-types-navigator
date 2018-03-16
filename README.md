@@ -1,6 +1,10 @@
 # swift-code-types-navigator
 **An experimental project that shows the types defined in a Swift code as expandable bubbles on a canvas.**
 
+### What it looks like (it's smooth in real-life):
+![Alt Text](https://github.com/yoshimkd/swift-code-types-navigator/blob/master/swift-code-types-navigator-demo.gif)
+This is the result for the code of **[Canvas File Explorer for Mac](https://github.com/yoshimkd/canvas-file-explorer-mac)**.
+
 ### How to use it:
 Just run these two commands in Terminal from this project's root directory:  
 `swift build`  
