@@ -13,7 +13,7 @@ extension ProtocolDeclaration.PropertyMember {
         return .init(
             accessLevel: modifiers.accessLevelModifier.accessLevel,
             protocolProperty: ProtocolProperty(
-                name: name, type: String(describing: typeAnnotation.type))
+                name: name.textDescription, type: String(describing: typeAnnotation.type))
         )
     }
     

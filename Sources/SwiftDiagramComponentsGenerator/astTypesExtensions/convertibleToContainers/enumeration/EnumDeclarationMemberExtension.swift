@@ -19,7 +19,7 @@ extension EnumDeclaration.Member {
     var nestedCases: [NestedCase] {
         if case .union(let unionStyleEnumCase) = self {
             return unionStyleEnumCase.cases.map {
-                NestedCase(case: Case(name: $0.name))
+                NestedCase(case: Case(name: $0.name.textDescription))
             }
         }
         return []

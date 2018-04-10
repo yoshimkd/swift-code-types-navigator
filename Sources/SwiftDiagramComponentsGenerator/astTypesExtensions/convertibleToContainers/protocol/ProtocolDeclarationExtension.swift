@@ -26,7 +26,7 @@ extension ProtocolDeclaration {
         return [.init(
             accessLevel: accessLevelModifier.accessLevel,
             container: Protocol(
-                name: name,
+                name: name.textDescription,
                 convertiblesToRelationships: convertiblesToRelationships)
             )
         ]

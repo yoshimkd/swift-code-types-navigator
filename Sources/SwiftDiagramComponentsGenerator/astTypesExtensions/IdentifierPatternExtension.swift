@@ -11,7 +11,7 @@ extension IdentifierPattern {
     
     var property: Property {
         return .init(
-            name: identifier,
+            name: identifier.textDescription,
             type: typeAnnotation.map { String(describing: $0.type) }
         )
     }

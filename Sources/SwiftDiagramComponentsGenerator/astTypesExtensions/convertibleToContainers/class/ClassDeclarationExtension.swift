@@ -13,7 +13,7 @@ extension ClassDeclaration {
         return [.init(
             accessLevel: accessLevelModifier.accessLevel,
             container: Class(
-                name: name,
+                name: name.textDescription,
                 isFinal: isFinal,
                 convertiblesToRelationships:
                 members.declarations.convertiblesToRelationships)

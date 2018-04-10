@@ -13,7 +13,7 @@ extension EnumDeclaration {
         return [.init(
             accessLevel: accessLevelModifier.accessLevel,
             container: Enumeration(
-                name: name,
+                name: name.textDescription,
                 convertiblesToRelationships:
                 members.declarations.convertiblesToRelationships +
                     members.nestedCases)

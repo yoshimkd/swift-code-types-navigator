@@ -13,7 +13,7 @@ extension FunctionDeclaration {
         return .init(
             accessLevel: modifiers.accessLevelModifier.accessLevel,
             function: Function(
-                name: name,
+                name: name.textDescription,
                 parameters: signature.parameterList.map
                     { $0.functionParameter },
                 resultType: signature.result.map

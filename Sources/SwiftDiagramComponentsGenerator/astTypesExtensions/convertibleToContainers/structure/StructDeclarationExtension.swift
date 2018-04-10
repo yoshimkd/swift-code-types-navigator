@@ -13,7 +13,7 @@ extension StructDeclaration {
         return [.init(
             accessLevel: accessLevelModifier.accessLevel,
             container: Structure(
-                name: name,
+                name: name.textDescription,
                 convertiblesToRelationships:
                 members.declarations.convertiblesToRelationships)
             )

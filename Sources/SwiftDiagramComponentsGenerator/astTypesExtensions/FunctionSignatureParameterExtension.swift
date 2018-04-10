@@ -11,7 +11,7 @@ extension FunctionSignature.Parameter {
     
     var functionParameter: FunctionParameter {
         return .init(
-            name: externalName ?? localName,
+            name: externalName?.textDescription ?? localName.textDescription,
             type: String(describing: typeAnnotation.type)
         )
     }
