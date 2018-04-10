@@ -12,7 +12,7 @@ extension VariableDeclaration {
     var nestedProperties: [NestedProperty] {
         switch body {
         case .initializerList(let initializerList):
-            return initializerList.flatMap {
+            return initializerList.compactMap {
                 if let identifierPatter = $0.pattern as? IdentifierPattern {
                     return .init(
                         accessLevel: modifiers.accessLevelModifier.accessLevel,

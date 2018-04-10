@@ -10,7 +10,7 @@ import AST
 extension ConstantDeclaration {
     
     var nestedProperties: [NestedProperty] {
-        return initializerList.flatMap {
+        return initializerList.compactMap {
             if let identifierPatter = $0.pattern as? IdentifierPattern {
                 return .init(
                     accessLevel: modifiers.accessLevelModifier.accessLevel,
