@@ -1,4 +1,4 @@
-# swift-code-types-navigator
+# Swift Code Types Navigator
 **An experimental project that shows the types defined in a Swift code as expandable bubbles on a canvas.**
 
 ### What it looks like (it's smooth in real-life):
