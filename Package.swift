@@ -1,4 +1,4 @@
-// swift-tools-version:4.0
+// swift-tools-version:4.2
 
 import PackageDescription
 
@@ -7,7 +7,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/yanagiba/swift-ast.git",
-            .exact("0.4.2"))
+            from: "0.18.10")
     ],
     targets: [
         .target(
@@ -20,5 +20,5 @@ let package = Package(
             name: "SwiftDiagramComponentsGeneratorTests",
             dependencies: ["SwiftDiagramComponentsGenerator"])
     ],
-    swiftLanguageVersions: [4]
+    swiftLanguageVersions: [.v4_2]
 )
