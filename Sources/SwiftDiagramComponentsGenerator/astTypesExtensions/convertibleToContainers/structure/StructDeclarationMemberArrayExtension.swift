@@ -10,7 +10,7 @@ import AST
 extension Array where Element == StructDeclaration.Member {
     
     var declarations: [Declaration] {
-        return flatMap { $0.declaration }
+        return compactMap { $0.declaration }
     }
     
 }

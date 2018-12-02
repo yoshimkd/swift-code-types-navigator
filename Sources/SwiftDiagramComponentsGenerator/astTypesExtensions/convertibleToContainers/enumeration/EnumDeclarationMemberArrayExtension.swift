@@ -10,7 +10,7 @@ import AST
 extension Array where Element == EnumDeclaration.Member {
     
     var declarations: [Declaration] {
-        return flatMap { $0.declaration }
+        return compactMap { $0.declaration }
     }
     
     var nestedCases: [NestedCase] {

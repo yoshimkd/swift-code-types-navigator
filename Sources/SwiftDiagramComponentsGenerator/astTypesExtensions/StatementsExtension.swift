@@ -10,7 +10,7 @@ import AST
 extension Array where Element == Statement {
     
     var declarations: [Declaration] {
-        return flatMap { $0 as? Declaration }
+        return compactMap { $0 as? Declaration }
     }
     
 }
